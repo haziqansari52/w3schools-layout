@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3schools</title>
+    <link rel="icon" type="image/x-icon" href="img/1-removebg-preview.png">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+    *{
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 2cm;
+        position: fixed;
+    }
+    .contaner1 img{
+        height: 1.7cm;
+        cursor: pointer;
+    }
+    .contaner2 ul .option{
+        list-style: none;
+        display: inline-block;
+        padding-left: 12px;
+        padding-top: .7cm;
+    }
+    .contaner2{
+position: absolute;
+bottom: -2%;
+left: 4%;
+border: 2px solid none;
+height: 2cm;
+width: 30%;
+cursor: pointer;
+    }
+    .contaner2 #option1{
+    border: 2px solid none;
+    height: 2cm;
+    }
+    .contaner2 #option1:hover{
+        color: white;
+        background-color: #04aa6d;
+    }
+    .contaner2 #option2{
+    border: 2px solid none;
+    height: 2cm;
+    }
+    .contaner2 #option2:hover{
+        color: white;
+        background-color: #04aa6d;
+    }
+    .contaner2 #option3{
+    border: 2px solid none;
+    height: 2cm;
+    }
+    .contaner2 #option3:hover{
+        color: white;
+        background-color: #04aa6d;
+    }
+    .contaner2 #option4{
+    border: 2px solid none;
+    height: 2cm;
+    position: absolute;
+    top: -.1px;
+    }
+    .contaner2 #option4:hover{
+        color: white;
+        background-color: #04aa6d;
+    }
+    .input{
+        border-radius: 20px;
+        position: absolute;
+        left: 13cm;
+        bottom: -.6cm;
+        height: 100%;
+    }
+    .input input{
+        border-radius: 20px;
+width: 75%;
+        outline: none;
+
+    }
+    #icon3{
+        position: absolute;
+        right: 1.3cm;
+        top: 3%;
+        cursor: pointer;
+    }
+    .input input:focus{
+border:5px solid #04aa6d;
+    }
+    #icon4{
+        position: absolute;
+        left: 48%;
+        bottom: 40%;
+        cursor: pointer;
+    }
+    .contaner3 ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 35px;
+    }
+    .contaner3 ul li i{
+        color: rgb(151,99,246);
+    }
+    .contaner3{
+      position:absolute;
+      left: 19.5cm;
+      bottom: .7cm;
+      cursor: pointer;
+    }
+    .signup{
+        background-color: #04aa6d;
+        height: 50%;
+        width: 7%;
+        border-radius: 20px;
+        text-align: center;
+        padding-top:.2cm ;
+        color: white;
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        left: 30.4cm;
+        bottom: .4cm;
+    }
+    .signup:hover{
+        background-color: #008353;
+    }
+    .login{
+        background-color: #d9eee1;
+        height: 50%;
+        width: 8%;
+        border-radius: 20px;
+        text-align: center;
+        padding-top:.2cm ;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        position: absolute;
+        left: 32.2cm;
+        bottom: .4cm;
+    }
+    .login:hover{
+        background-color: #00915c;
+        color: rgb(255, 255, 255);
+    }
+    .nav2{
+border: 2px solid;
+width: 100%;
+height: 1cm;
+position: fixed;
+top: 12%;
+background-color: rgb(29, 26, 53);
+    }
+    .nav2 ul {
+        display: flex;
+        position: absolute;
+        bottom: .2cm;
+    }
+    .nav2 ul li{
+        list-style: none;
+        padding: 10px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    .nav2 ul #na{
+        margin-left: -20px;
+        position: relative;
+        top: .3cm;
+        height: 1cm;
+        cursor: pointer;
+    }
+    .nav2 ul #nb{
+        position: relative;
+        top: .3cm;
+       height: 1cm;
+       cursor: pointer;
+    }
+    .nav2 ul #nc{
+        position: relative;
+        top: .3cm;
+        height: 1cm;
+        cursor: pointer;
+    }    .nav2 ul #nd{
+        position: relative;
+        top: .3cm;
+        height: 1cm;
+        cursor: pointer;
+    }    .nav2 ul #ne{
+        position: relative;
+        top: .3cm;
+     cursor: pointer;
+        height: 1cm;
+    }
+    .nav2 ul #nf{
+        position: relative;
+        top: .3cm;
+        cursor: pointer;
+        height: 1cm;
+    }  
+    .nav2 ul #ng{
+        position: relative;
+        top: .3cm;
+        cursor: pointer;
+        height: 1cm;
+    }
+    .nav2 ul #na:hover{
+background-color: #000000;
+    }
+    .nav2 ul #nb:hover{
+background-color: #000000;
+    } .nav2 ul #nc:hover{
+background-color: #000000;
+    } .nav2 ul #nd:hover{
+background-color: #000000;
+    } .nav2 ul #ne:hover{
+background-color: #000000;
+    } .nav2 ul #nf:hover{
+background-color: #000000;
+    }
+    .nav2 ul #ng:hover{
+background-color: #000000;
+    }
+    aside{
+        width: 20%;
+        background-color: rgb(235, 235, 235);
+        height: 90vh;
+        position: fixed;
+        top: 2.9cm;
+        overflow-y: scroll;
+    }
+    section{
+        width: 80%;
+        background-color: #ffffff;
+        position:fixed;
+        left: 7.2cm;
+        top: 2.9cm;
+    }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="contaner1"><img src="img/1-removebg-preview.png" alt=""></div>
+    <div class="contaner2">
+        <ul>
+            <li class="option" id="option1">Tutorials<i id="icon1" class="ri-arrow-down-s-fill"></i></li>
+            <li class="option" id="option2">Exercise<i id="icon2" class="ri-arrow-down-s-fill"></i></li>
+            <li class="option" id="option3"> Certificates<i id="icon2" class="ri-arrow-down-s-fill"></i></li>
+            <li class="option" id="option4">Services<i id="icon2" class="ri-arrow-down-s-fill"></i></li>
+        </ul>
+    </div>
+    <div class="input">
+        <input type="text" placeholder="Search...">
+        <i id="icon3" class="ri-search-line"></i>
+    </div>
+    <i id="icon4" class="ri-checkbox-multiple-blank-fill"></i>
+    <div class="contaner3">
+        <ul>
+            <li><i class="ri-sparkling-fill"></i>Plus</li>
+            <li><i class="ri-code-s-slash-line"></i>Spaces</li>
+            <li><i class="ri-shopping-cart-2-line"></i>Get Certified</li>
+        </ul>
+    </div>
+    <div class="signup">Sign Up</div>
+    <div class="login">Log in</div>
+</nav>  
+<div class="nav2">
+<ul>
+    <li id="na">html</li>
+    <li id="nb">html</li>
+    <li id="nc">html</li>
+    <li id="nd">html</li>
+    <li id="ne">html</li>
+    <li id="nf">html</li>
+    <li id="ng">html</li>
+</ul>
+</div>
+<aside>
+<p>Lorem ipsum dolor, sit amet consectetur 
+    adipisicing elit. Voluptates, nobis cumque 
+    impedit aperiam non beatae totam pariatur, error 
+    itaque, velit sint ab sunt neque facere quo voluptatum 
+    inventore sapiente quaerat repudiandae reiciendis nam
+     quam libero maiores. Eligendi, cupiditate possimus, 
+     illo inventore saepe sed fugit perspiciatis illum fugiat 
+     accusamus iste ipsam officiis fuga provident. Quo obcaecati
+     , aspernatur nisi quibusdam architecto rem doloribus 
+     distinctio, est maiores, adipisci dolor. 
+     Vel consequatur, ipsum laudantium repellat quas recusandae, 
+     possimus nostrum dolores modi a vero maiores blanditiis ab quos v
+     elit. Illum sapiente hic vel sequi laboriosam dicta explicabo ex q
+     uos porro, amet temporibus, quibusdam ut accusamus tempore iusto ab co
+     rrupti quia labore suscipit odio. Impedit praesentium veritatis inci
+     dunt quae, ipsum ducimus autem a voluptates officia harum nisi c
+     umque nam obcaecati id consequatur eos tenetur accusantium. E
+     rror sapiente, eaque placeat numquam repellat laudantium obcaecati in
+      suscipit eos expedita veritatis pariatur quos! Maiores amet n
+      eque quo nemo culpa repellat eius tempore, rem quidem ipsum quae
+      rat quod ea eligendi aliquid sint aut eaque dicta dolorem! Culpa eni
+      m in dolores sunt, voluptatem veritatis qui quo optio illo quibu
+      sdam provident placeat magni ducimus, laudantium quidem saepe labo</p>
+</aside>
+<section>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia sed architecto laudantium? Corrupti molestiae voluptates id, voluptate sunt adipisci labore omnis exercitationem saepe non repudiandae ipsam eos illum recusandae ut nihil voluptatibus consequuntur tempore quas ipsa impedit reiciendis maxime? Ullam ea fuga, saepe suscipit laudantium odio minus aliquam, optio repudiandae deleniti, maxime sint provident alias delectus perferendis doloribus cum? Incidunt amet beatae quos, rem illum voluptas laborum accusantium vero facilis reiciendis, dolorum nemo? Error, illo impedit sunt quia, illum maxime quam blanditiis suscipit optio ab, hic ratione eos porro sapiente atque natus odit adipisci officiis quibusdam voluptas tempore reprehenderit mollitia. Mollitia eveniet labore praesentium omnis cupiditate porro perferendis ut commodi, voluptatem ex laborum assumenda totam molestias exercitationem voluptates quasi officiis temporibus tenetur. Modi fuga cumque ex non consequuntur delectus, recusandae hic similique, libero nisi accusamus debitis quasi odio corrupti voluptas explicabo amet esse? Molestiae quisquam doloribus voluptates harum qui iste totam vitae culpa odit sapiente. Quod sequi velit recusandae accusantium quisquam expedita dicta ducimus voluptates, magnam nulla amet aspernatur corrupti! Magni facere soluta minima optio ad nam ea itaque dolorem, mollitia, sapiente facilis, sequi commodi! Autem voluptates dolorum facilis dolore accusantium consequuntur pariatur assumenda amet quae placeat! Deleniti soluta quasi ut, distinctio nulla itaque reprehenderit necessitatibus. Quae explicabo doloremque non, aliquam tenetur nobis est, ea natus temporibus, rem praesentium beatae? Minus consectetur ipsum, quos natus consequuntur veritatis similique assumenda iure dolor aliquam ad impedit vero laudantium quidem ratione exercitationem voluptatum quisquam illum perferendis. Dicta voluptas, corporis id tenetur illum dolorem vel eos molestias provident. Harum nisi repellendus neque, non minima eligendi quam illum quas sint temporibus dolorem totam, corrupti hic aperiam tempore at molestiae voluptas obcaecati magnam dignissimos dolore ducimus dolores, labore porro. Iusto alias veniam magni iure sed blanditiis numquam quae quibusdam nemo nostrum architecto pariatur, omnis doloribus nesciunt, eaque quasi sint recusandae nihil non eligendi aliquid at nam asperiores id? Eaque porro harum aperiam adipisci sed sint fugit illum alias placeat facilis quibusdam nobis dignissimos voluptas ducimus itaque praesentium eos sequi quaerat, tempora ratione asperiores. Sapiente blanditiis, ut libero fugiat eveniet ad consectetur exercitationem eum tempore officia, quasi fugit ex minima aliquid dicta culpa earum laudantium quos reiciendis mollitia. Facere pariatur deserunt obcaecati cum. Ipsam nihil earum vel officia, eligendi sunt, voluptate officiis sint minus est magni in quaerat possimus esse, sit explicabo. Aspernatur, molestiae qui nihil quis ratione architecto expedita quas ea accusantium, tempore debitis ipsam necessitatibus iure commodi nisi id in aperiam accusamus laudantium cum praesentium saepe vero! Vitae officiis, labore minima ipsam aliquam in, commodi assumenda a dolore exercitationem debitis maxime architecto corporis explicabo qui rerum nulla. Temporibus unde dignissimos quas eos voluptatibus adipisci incidunt perspiciatis explicabo possimus molestiae repellat tenetur ut ab, eius sit architecto itaque iusto ad, veritatis cupiditate. Quasi nesciunt sapiente dolores perferendis dolore vitae laudantium nihil accusamus possimus, ipsum reiciendis aspernatur ad est adipisci perspiciatis modi distinctio velit! Aliquam ullam pariatur temporibus in assumenda molestiae amet placeat, nisi blanditiis aspernatur id optio illum repellat, commodi magni fugit sint asperiores. Laboriosam, ipsam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fuga id quas nulla voluptatibus non, sint fugit, incidunt assumenda expedita adipisci doloribus distinctio reiciendis aspernatur? Repudiandae magni pariatur doloribus soluta ipsum, beatae laudantium ab odit nesciunt natus ex sint perferendis facere quidem suscipit, numquam quaerat sunt nam ratione quas expedita et deleniti ad! Saepe fugit amet corrupti exercitationem ipsum quam dignissimos sapiente sed rerum mollitia! Tempore illo facilis eos reiciendis suscipit nesciunt ab. At, doloremque sit quisquam dolorem ipsam quas. Dicta laboriosam necessitatibus optio id nemo quia voluptatum, quisquam nulla beatae itaque cumque, quo rerum architecto, pariatur cum reiciendis quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis voluptatum rem alias, deleniti accusamus omnis! Reprehenderit maiores, delectus expedita aliquid enim amet accusantium pariatur dolorum nemo quod debitis voluptate quaerat. Iste similique ipsa ut fuga nesciunt voluptas, libero voluptatibus quasi veritatis mollitia aut ex excepturi a autem dolores odio aliquid, perferendis velit illum voluptates qui temporibus. Nam maiores temporibus fugiat quae cupiditate sit illum earum, ex, architecto eligendi minus cum quia tempora laudantium? Velit quibusdam perferendis ullam temporibus! Ab nisi nobis accusamus officia itaque neque in voluptate mollitia, unde reprehenderit repellat iusto, minima modi! Dolorum, voluptatibus harum neque quaerat at placeat nam beatae eveniet quis tenetur nostrum vel, id officiis doloremque veritatis eligendi nihil? Perspiciatis doloribus minima, maiores vel ab magni, voluptatem obcaecati placeat vero a laboriosam modi. Deleniti quibusdam dicta cupiditate, similique quidem repudiandae velit iste ea id, possimus repellendus perferendis architecto. Hic modi voluptatibus alias doloremque, quos ipsam deleniti tempora fuga, quo quis nisi totam soluta ea architecto eius optio? Corporis explicabo minus, nam, sed quam recusandae consequuntur culpa maxime officia repellat veritatis enim unde iusto fugit perspiciatis? Optio quisquam saepe earum autem doloribus in nulla quae nam maxime repellendus praesentium, amet, qui dolorem vero vel cum ducimus iusto accusantium tempore at ex. A optio pariatur officiis possimus reprehenderit quidem consequatur dignissimos autem cumque aut modi consectetur, explicabo recusandae nam id reiciendis, perspiciatis consequuntur libero perferendis suscipit harum tempore neque quia voluptatem? Accusamus facere voluptates, libero tempore omnis nulla officia nihil adipisci ad impedit voluptatibus ratione dolorem reiciendis ipsam corrupti amet aut eligendi voluptate eos tempora? Qui, numquam iure a ullam perspiciatis porro commodi? Nostrum iusto labore distinctio sequi, corporis eveniet aliquam sapiente sit consequatur libero hic ipsa, ratione possimus? Delectus totam architecto perspiciatis ad ex dolorem, eveniet rem quia nostrum illo alias placeat voluptatibus, nisi accusantium.</p>
+</section>
+</body>
+</html>
